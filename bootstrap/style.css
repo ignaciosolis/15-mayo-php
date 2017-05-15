@@ -1,4 +1,4 @@
-body{padding-top:2em;}
+body{padding-top:2em; background-color: #C4C3C3; }
 a[href^="http://"],a[href^="https://"] {text-decoration:underline;}
 a[href^="http://"]:hover ,a[href^="https://"]:hover {text-decoration:none;}
 

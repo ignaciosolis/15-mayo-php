@@ -3,7 +3,7 @@
 <h2>Artículos</h2>
 <?php
 // basta con la línea de PHP para llamar al imdb-movies.csv y asignarlo a la variable $csv
-$csv = array_map('str_getcsv', file('datos.csv'));
+$csv = array_map('str_getcsv', file('https://raw.githubusercontent.com/camilavenegass/15demayo-php/master/datos.csv'));
 // pero debo hacer un pequeño ajuste, para eliminar del arreglo el encabezado del imdb-movies.csv
 array_walk($csv, function(&$a) use ($csv) {$a = array_combine($csv[0], $a);});
 array_shift($csv);
